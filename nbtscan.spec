@@ -10,6 +10,7 @@ Source0:	http://www.inetcat.org/software/%{name}-%{version}.tar.gz
 URL:		http://www.inetcat.org/software/nbtscan.html
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
