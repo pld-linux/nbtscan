@@ -31,6 +31,7 @@ adres MAC.
 %setup -q -n %{name}-1.5.1a
 
 %build
+cp -f %{_datadir}/libtool/config.sub .
 %{__aclocal}
 %{__autoconf}
 %configure
