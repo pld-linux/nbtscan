@@ -10,7 +10,6 @@ Source0:	http://www.inetcat.org/software/%{name}-%{version}.tar.gz
 URL:		http://www.inetcat.org/software/nbtscan.html
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +31,7 @@ adres MAC.
 %setup -q -n %{name}-1.5.1a
 
 %build
-cp -f %{_datadir}/libtool/config.sub .
+cp -f /usr/share/automake/config.sub .
 %{__aclocal}
 %{__autoconf}
 %configure
