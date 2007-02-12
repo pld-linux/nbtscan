@@ -1,5 +1,5 @@
 Summary:	A program for scanning networks for NetBIOS name information
-Summary(pl):	Program do skanowania sieci pod k±tem informacji o nazwach NetBIOS
+Summary(pl.UTF-8):   Program do skanowania sieci pod kÄ…tem informacji o nazwach NetBIOS
 Name:		nbtscan
 Version:	1.5.1
 Release:	1
@@ -19,12 +19,12 @@ range and lists received information in human readable form. For each
 responded host it lists IP address, NetBIOS computer name, logged-in
 user name and MAC address (such as Ethernet).
 
-%description -l pl
-NBTscan to program do skanowania sieci IP pod k±tem informacji o
-nazwach NetBIOS. Wysy³a zapytanie NetBIOS o stan do ka¿dego adresu z
+%description -l pl.UTF-8
+NBTscan to program do skanowania sieci IP pod kÄ…tem informacji o
+nazwach NetBIOS. WysyÅ‚a zapytanie NetBIOS o stan do kaÅ¼dego adresu z
 podanego adresu i wypisuje otrzymane informacje w postaci czytelnej
-dla cz³owieka. Dla ka¿dego hosta, który odpowiedzia³, wypisuje adres
-IP, NetBIOS-ow± nazwê komputera, nazwê zalogowanego u¿ytkownika oraz
+dla czÅ‚owieka. Dla kaÅ¼dego hosta, ktÃ³ry odpowiedziaÅ‚, wypisuje adres
+IP, NetBIOS-owÄ… nazwÄ™ komputera, nazwÄ™ zalogowanego uÅ¼ytkownika oraz
 adres MAC.
 
 %prep
