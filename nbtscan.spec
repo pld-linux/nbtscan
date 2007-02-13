@@ -1,5 +1,5 @@
 Summary:	A program for scanning networks for NetBIOS name information
-Summary(pl.UTF-8):   Program do skanowania sieci pod kątem informacji o nazwach NetBIOS
+Summary(pl.UTF-8):	Program do skanowania sieci pod kątem informacji o nazwach NetBIOS
 Name:		nbtscan
 Version:	1.5.1
 Release:	1
