@@ -2,11 +2,16 @@ Summary:	A program for scanning networks for NetBIOS name information
 Summary(pl.UTF-8):	Program do skanowania sieci pod kątem informacji o nazwach NetBIOS
 Name:		nbtscan
 Version:	1.5.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/System
 Source0:	http://www.inetcat.org/software/%{name}-%{version}.tar.gz
 # Source0-md5:	85bb085077c380b82a6ff73e0de0c154
+# Debian nbtscan 1.5.1-7 patches
+Patch0:		%{name}-fix-implicit-declarations.patch
+Patch1:		%{name}-fix-off-by-one.patch
+Patch2:		%{name}-fix-format-specifiers.patch
+Patch3:		%{name}-makefile-hardening.patch
 URL:		http://www.inetcat.org/software/nbtscan.html
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -29,6 +34,10 @@ adres MAC.
 
 %prep
 %setup -q -n %{name}-1.5.1a
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
+%patch -P3 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .
